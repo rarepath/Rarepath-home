@@ -11,7 +11,7 @@ import {
   useDisclosure,
 } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon, ChevronDownIcon } from "@chakra-ui/icons";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Logo from "../shared/Logo";
 import { NAV_ITEMS } from "../utils/mockdata";
 import { NavItem } from "../utils/interfaces";
@@ -47,7 +47,7 @@ export default function NavBar() {
           />
         </Flex>
         <Flex flex={{ base: 1 }} justify={{ base: "center", md: "start" }}>
-          <Box as={Link} to="" cursor="pointer" flex={0.25}>
+          <Box as={Link} to="/" cursor="pointer" flex={0.25}>
             <Logo size="xl" boxSize={8} gap={4} text="RarePath" />
           </Box>
 
@@ -68,8 +68,8 @@ export default function NavBar() {
           spacing={6}
         >
           <Button
-            as={NavLink}
-            to="/chat"
+            as="a"
+            href="https://radiant.rarepath.ai/"
             display={{ base: "none", md: "inline-flex" }}
             fontSize={"sm"}
             color={"white"}
