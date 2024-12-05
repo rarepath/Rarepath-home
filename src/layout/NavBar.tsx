@@ -33,44 +33,52 @@ export default function NavBar() {
         align={"center"}
       >
         <Flex
-          flex={{ base: 1, md: "auto" }}
-          ml={{ base: -2 }}
-          display={{ base: "flex", md: "none" }}
+          flex={{ base: 1 }}
+          justify={{ base: "space-between", lg: "start" }}
         >
-          <IconButton
-            onClick={onToggle}
-            icon={
-              isOpen ? <CloseIcon w={3} h={3} /> : <HamburgerIcon w={5} h={5} />
-            }
-            variant={"ghost"}
-            aria-label={"Toggle Navigation"}
-          />
-        </Flex>
-        <Flex flex={{ base: 1 }} justify={{ base: "center", md: "start" }}>
-          <Box as={Link} to="/" cursor="pointer" flex={0.25}>
+          <Box
+            as={Link}
+            to="/"
+            cursor="pointer"
+            flex={{ base: "unset", lg: 0.25 }}
+          >
             <Logo size="xl" boxSize={8} gap={4} text="RarePath" />
           </Box>
-
           <Flex
-            display={{ base: "none", md: "flex" }}
+            display={{ base: "none", lg: "flex" }}
             ml={10}
             flex={0.5}
             justify="center"
           >
             <DesktopNav />
           </Flex>
+          <Flex display={{ base: "flex", lg: "none" }}>
+            <IconButton
+              onClick={onToggle}
+              icon={
+                isOpen ? (
+                  <CloseIcon w={3} h={3} />
+                ) : (
+                  <HamburgerIcon w={5} h={5} />
+                )
+              }
+              variant={"ghost"}
+              aria-label={"Toggle Navigation"}
+            />
+          </Flex>
         </Flex>
 
         <Stack
-          flex={{ base: 0.25, md: 0 }}
+          flex={{ base: 0.25, lg: 0 }}
           justify={"flex-end"}
           direction={"row"}
           spacing={6}
+          display={{ base: "none", lg: "flex" }}
         >
           <Button
             as="a"
             href="https://radiant.rarepath.ai/"
-            display={{ base: "none", md: "inline-flex" }}
+            display={{ base: "none", lg: "inline-flex" }}
             fontSize={"sm"}
             color={"white"}
             boxShadow="glow-md"
@@ -120,7 +128,7 @@ const MobileNav = () => {
     <Stack
       bg={useColorModeValue("white", "gray.800")}
       p={4}
-      display={{ md: "none" }}
+      display={{ lg: "none" }}
     >
       {NAV_ITEMS.map((navItem) => (
         <MobileNavItem key={navItem.label} {...navItem} />

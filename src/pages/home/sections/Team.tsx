@@ -28,7 +28,16 @@ const Team = () => {
       <Grid gap={20} maxW="7xl" gridTemplateColumns="repeat(2,1fr)">
         {createElements(TEAM_HEADSHOTS)}
       </Grid>
-      <Grid gap={20} maxW="7xl" gridTemplateColumns="repeat(3,1fr)">
+      <Grid
+        gap={20}
+        maxW="7xl"
+        gridTemplateColumns={{ base: "repeat(2,1fr)", lg: "repeat(3,1fr)" }}
+        sx={{
+          "& > :last-child": {
+            gridColumn: { base: "1 / 3", lg: "unset" },
+          },
+        }}
+      >
         {createElements(ADVISOR_HEADSHOTS)}
       </Grid>
     </VStack>

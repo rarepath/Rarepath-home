@@ -20,8 +20,8 @@ export default function ContactUs() {
   const [error, setError] = useState(false);
 
   return (
-    <Flex align={"center"} justify={"center"} id="contact">
-      <Container maxW={"lg"} bg="white" rounded={"lg"} p={6}>
+    <Flex align={"stretch"} justify={"center"} id="contact">
+      <Container bg="white" rounded={"lg"} p={6}>
         <Heading
           as={"h2"}
           fontSize={{ base: "xl", sm: "2xl" }}

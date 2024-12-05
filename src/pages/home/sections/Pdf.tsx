@@ -3,7 +3,12 @@ import { Box, VStack } from "@chakra-ui/react";
 
 const Pdf = () => {
   return (
-    <VStack maxW="5xl" w="100%" gap={10} id="whitepaper">
+    <VStack
+      maxW={{ base: "xl", md: "3xl", lg: "5xl" }}
+      w="100%"
+      gap={10}
+      id="whitepaper"
+    >
       <SectionHeading
         heading="Whitepaper"
         subheading="Explore our whitepaper about the application of AI in rare disease diagnosis."

@@ -5,7 +5,13 @@ const Companies = () => {
   return (
     <VStack gap={5}>
       <Heading>Supported By</Heading>
-      <Flex maxW="4xl" justifyContent="center" gap={20} align="center">
+      <Flex
+        maxW="4xl"
+        justifyContent="center"
+        gap={20}
+        align="center"
+        flexDir={{ base: "column", lg: "row" }}
+      >
         {COMPANIES.map((company) => {
           return (
             <Tooltip label={company.label} key={company.src}>
@@ -13,7 +19,8 @@ const Companies = () => {
                 as="a"
                 href={company.href}
                 target="_blank"
-                transform="scale(1)"
+                objectFit="cover"
+                w={{ base: "100px", md: "150px", lg: "200px" }}
               >
                 <Image src={company.src} objectFit="fill" />
               </Box>

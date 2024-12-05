@@ -17,12 +17,13 @@ export default function CallToActionWithAnnotation() {
       <Stack
         as={Box}
         textAlign={"center"}
-        spacing={{ base: 8, md: 14 }}
-        py={{ base: 10, md: 20 }}
+        align="center"
+        spacing={{ base: 8, lg: 14 }}
+        py={{ base: 10, lg: 20 }}
       >
         <Heading
           fontWeight={600}
-          fontSize={{ base: "2xl", sm: "4xl", md: "6xl" }}
+          fontSize={{ base: "2xl", sm: "4xl", lg: "6xl" }}
           lineHeight={"110%"}
         >
           Modernize your Diagnosis Process <br />
@@ -30,7 +31,12 @@ export default function CallToActionWithAnnotation() {
             With RarePath
           </Text>
         </Heading>
-        <Text color={"gray.500"} fontSize="xl">
+        <Text
+          color={"gray.500"}
+          fontSize="xl"
+          w={{ base: "75%", lg: "unset" }}
+          textAlign="center"
+        >
           RarePath is a subsidiary of{" "}
           <Text
             as="a"
@@ -50,7 +56,12 @@ export default function CallToActionWithAnnotation() {
           alignSelf={"center"}
           position={"relative"}
         >
-          <ButtonGroup>
+          <ButtonGroup
+            flexDir={{ base: "column", lg: "row" }}
+            gap={{ base: "10px", lg: "unset" }}
+            border="1px solid red"
+            alignItems="center"
+          >
             <Button px={6} color="white" w="200px" boxShadow="glow-md">
               Try now
             </Button>

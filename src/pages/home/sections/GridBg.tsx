@@ -4,6 +4,7 @@ const GridBg = () => {
   return (
     <Box
       pos="absolute"
+      display={{ base: "none", "2xl": "unset" }}
       w="100vw"
       h="100vh"
       left="0px"

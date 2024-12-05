@@ -1,10 +1,13 @@
-import { Box, Heading, HStack, Text, VStack } from "@chakra-ui/react";
+import { Box, Flex, Heading, Text, VStack } from "@chakra-ui/react";
 import ContactUs from "./ContactUs";
 
 const Closer = () => {
   return (
-    <HStack
-      maxW="5xl"
+    <Flex
+      maxW={{ base: "3xl", lg: "5xl" }}
+      flexDir={{ base: "column", lg: "row" }}
+      justify="center"
+      align={{ base: "stretch", lg: "center" }}
       bgGradient="linear(to-r, primary.500, primary.400)"
       p={10}
       borderRadius="md"
@@ -24,7 +27,7 @@ const Closer = () => {
       <Box flex={1}>
         <ContactUs />
       </Box>
-    </HStack>
+    </Flex>
   );
 };
 

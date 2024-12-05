@@ -1,7 +1,7 @@
 import {
   Button,
+  Flex,
   Heading,
-  HStack,
   Icon,
   Image,
   Stack,
@@ -24,20 +24,38 @@ const ProductPreview = ({
   imgFirst?: boolean;
 }) => {
   return (
-    <HStack gap={20} flexDir={imgFirst ? "row" : "row-reverse"}>
+    <Flex
+      align="center"
+      justify="center"
+      gap={20}
+      flexDir={{ base: "column", xl: imgFirst ? "row" : "row-reverse" }}
+    >
       <Image src={src} w="500px" boxShadow="glow-sm" borderRadius="md" />
-      <VStack gap={6} align="flex-start">
+      <VStack gap={6} align={{ base: "center", xl: "flex-start" }}>
         <Stack maxW={"3xl"} textAlign={"left"}>
-          <Heading fontSize={{ base: "2xl", sm: "4xl" }} fontWeight={"bold"}>
+          <Heading
+            fontSize={{ base: "2xl", sm: "4xl" }}
+            fontWeight={"bold"}
+            textAlign={{ base: "center", xl: "unset" }}
+          >
             {heading}
           </Heading>
           {subheading && (
-            <Text color={"gray.600"} fontSize={{ base: "sm", sm: "lg" }}>
+            <Text
+              color={"gray.600"}
+              fontSize={{ base: "sm", sm: "lg" }}
+              textAlign={{ base: "center", xl: "unset" }}
+            >
               {subheading}
             </Text>
           )}
         </Stack>
-        <Text>{body}</Text>
+        <Text
+          w={{ base: "65%", xl: "unset" }}
+          textAlign={{ base: "center", xl: "unset" }}
+        >
+          {body}
+        </Text>
         <Button
           color="white"
           rightIcon={<Icon as={FaArrowRight} />}
@@ -46,7 +64,7 @@ const ProductPreview = ({
           Try Now
         </Button>
       </VStack>
-    </HStack>
+    </Flex>
   );
 };
 
