@@ -30,7 +30,12 @@ const ProductPreview = ({
       gap={20}
       flexDir={{ base: "column", xl: imgFirst ? "row" : "row-reverse" }}
     >
-      <Image src={src} w="500px" boxShadow="glow-sm" borderRadius="md" />
+      <Image
+        src={src}
+        w={{ base: "300px", md: "500px" }}
+        boxShadow="glow-sm"
+        borderRadius="md"
+      />
       <VStack gap={6} align={{ base: "center", xl: "flex-start" }}>
         <Stack maxW={"3xl"} textAlign={"left"}>
           <Heading

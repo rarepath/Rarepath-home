@@ -37,13 +37,14 @@ const Team = () => {
         maxW="7xl"
         gridTemplateColumns={{
           base: "repeat(1,1fr)",
-          md: "repeat(3,1fr)",
+          md: "repeat(2,1fr)",
+          xl: "repeat(3,1fr)",
         }}
-        // sx={{
-        //   "& > :last-child": {
-        //     gridColumn: { base: "unset", sm: "1/3", lg: "unset" },
-        //   },
-        // }}
+        sx={{
+          "& > :last-child": {
+            gridColumn: { base: "unset", md: "1/3", xl: "unset" },
+          },
+        }}
       >
         {createElements(ADVISOR_HEADSHOTS)}
       </Grid>

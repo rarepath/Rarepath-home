@@ -28,14 +28,14 @@ interface CardProps {
 const Card = ({ heading, description, icon }: CardProps) => {
   return (
     <Box
-      maxW={{ base: "full", md: "275px" }}
-      w={"full"}
+      maxW={{ base: "full", lg: "275px" }}
+      // w={"full"}
       borderWidth="1px"
       borderRadius="lg"
       overflow="hidden"
       p={5}
     >
-      <Stack align={"start"} spacing={2} h="100%">
+      <Stack align={"start"} spacing={2} h="100%" w={{ base: "fit-content" }}>
         <Flex
           w={16}
           h={16}
