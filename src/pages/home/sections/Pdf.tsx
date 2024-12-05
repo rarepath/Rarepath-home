@@ -4,7 +4,7 @@ import { Box, VStack } from "@chakra-ui/react";
 const Pdf = () => {
   return (
     <VStack
-      maxW={{ base: "xl", md: "3xl", lg: "5xl" }}
+      maxW={{ base: "xs", sm: "xl", md: "2xl", lg: "5xl" }}
       w="100%"
       gap={10}
       id="whitepaper"

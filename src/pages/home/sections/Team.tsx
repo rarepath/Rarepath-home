@@ -25,18 +25,25 @@ const Team = () => {
         heading="Our Team"
         subheading="Our team is composed of current PhDs, Masters, and Undergraduate students, alongside academic leaders ranging from AI to Biology."
       />
-      <Grid gap={20} maxW="7xl" gridTemplateColumns="repeat(2,1fr)">
+      <Grid
+        gap={20}
+        maxW="7xl"
+        gridTemplateColumns={{ base: "repeat(1,1fr)", md: "repeat(2,1fr)" }}
+      >
         {createElements(TEAM_HEADSHOTS)}
       </Grid>
       <Grid
         gap={20}
         maxW="7xl"
-        gridTemplateColumns={{ base: "repeat(2,1fr)", lg: "repeat(3,1fr)" }}
-        sx={{
-          "& > :last-child": {
-            gridColumn: { base: "1 / 3", lg: "unset" },
-          },
+        gridTemplateColumns={{
+          base: "repeat(1,1fr)",
+          md: "repeat(3,1fr)",
         }}
+        // sx={{
+        //   "& > :last-child": {
+        //     gridColumn: { base: "unset", sm: "1/3", lg: "unset" },
+        //   },
+        // }}
       >
         {createElements(ADVISOR_HEADSHOTS)}
       </Grid>

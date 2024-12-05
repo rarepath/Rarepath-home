@@ -4,7 +4,7 @@ import ContactUs from "./ContactUs";
 const Closer = () => {
   return (
     <Flex
-      maxW={{ base: "3xl", lg: "5xl" }}
+      maxW={{ base: "xs", sm: "xl", md: "2xl", lg: "5xl" }}
       flexDir={{ base: "column", lg: "row" }}
       justify="center"
       align={{ base: "stretch", lg: "center" }}

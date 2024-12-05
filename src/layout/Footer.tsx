@@ -8,7 +8,6 @@ import {
   useColorModeValue,
   Grid,
   GridItem,
-  HStack,
   Flex,
 } from "@chakra-ui/react";
 import { ReactNode } from "react";
@@ -68,8 +67,12 @@ export default function Footer() {
     >
       <Box w="5xl">
         <Container as={Stack} maxW={"6xl"} py={10}>
-          <HStack>
-            <Stack spacing={6}>
+          <Flex
+            flexDir={{ base: "column-reverse", md: "row" }}
+            align="center"
+            gap={{ base: 10 }}
+          >
+            <Stack spacing={2} align="center">
               <Box>
                 <Logo size="xl" boxSize={8} text="RarePath" />
               </Box>
@@ -122,7 +125,7 @@ export default function Footer() {
                 Satus
               </Box>
             </Stack> */}
-            <Stack align={"flex-start"}>
+            <Stack align={{ base: "center", md: "flex-start" }}>
               <ListHeader>Stay up to date</ListHeader>
               <Stack direction={"row"}>
                 <Input
@@ -144,7 +147,7 @@ export default function Footer() {
                 />
               </Stack>
             </Stack>
-          </HStack>
+          </Flex>
         </Container>
       </Box>
     </Box>

@@ -13,7 +13,12 @@ import SectionHeading from "@/shared/SectionHeading";
 
 export default function Faq() {
   return (
-    <VStack w="100%" maxW="4xl" gap={10} id="faq">
+    <VStack
+      w="100%"
+      maxW={{ base: "xs", sm: "xl", md: "2xl", lg: "5xl" }}
+      gap={10}
+      id="faq"
+    >
       <SectionHeading heading="FAQ" />
       <Flex align={"center"} justify={"center"} w="100%">
         <Accordion allowMultiple width="100%" maxW="7xl" rounded="md">
