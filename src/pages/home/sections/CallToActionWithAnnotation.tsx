@@ -59,7 +59,6 @@ export default function CallToActionWithAnnotation() {
           <ButtonGroup
             flexDir={{ base: "column", lg: "row" }}
             gap={{ base: "10px", lg: "unset" }}
-            border="1px solid red"
             alignItems="center"
           >
             <Button px={6} color="white" w="200px" boxShadow="glow-md">

@@ -1,5 +1,5 @@
-import { previewOne, previewTwo } from "@/assets";
-import ProductPreview from "@/shared/ProductPreview";
+import { previewOne, previewTwo } from "../../../assets";
+import ProductPreview from "../../../shared/ProductPreview";
 import { VStack } from "@chakra-ui/react";
 
 const AboutUs = () => {

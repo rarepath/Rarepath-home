@@ -1,4 +1,4 @@
-import SectionHeading from "@/shared/SectionHeading";
+import SectionHeading from "../../../shared/SectionHeading";
 import { Box, VStack } from "@chakra-ui/react";
 
 const Pdf = () => {

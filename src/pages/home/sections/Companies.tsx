@@ -1,4 +1,4 @@
-import { accelerator, isb, sv, waynegladys } from "@/assets";
+import { accelerator, isb, sv, waynegladys } from "../../../assets";
 import { Box, Flex, Heading, Image, Tooltip, VStack } from "@chakra-ui/react";
 
 const Companies = () => {

@@ -9,7 +9,7 @@ import {
 } from "@chakra-ui/react";
 
 import { ChevronDownIcon } from "@chakra-ui/icons";
-import SectionHeading from "@/shared/SectionHeading";
+import SectionHeading from "../../../shared/SectionHeading";
 
 export default function Faq() {
   return (

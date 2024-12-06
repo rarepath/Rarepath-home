@@ -1,6 +1,14 @@
-import { dom, fern, frankie, guy, ramsey, roach, sundar } from "@/assets";
-import SectionHeading from "@/shared/SectionHeading";
-import TeamProfile from "@/shared/TeamProfile";
+import {
+  dom,
+  fern,
+  frankie,
+  guy,
+  ramsey,
+  roach,
+  sundar,
+} from "../../../assets";
+import SectionHeading from "../../../shared/SectionHeading";
+import TeamProfile from "../../../shared/TeamProfile";
 import { Grid, GridItem, VStack } from "@chakra-ui/react";
 
 const Team = () => {
@@ -23,7 +31,7 @@ const Team = () => {
     <VStack gap={20} id="team">
       <SectionHeading
         heading="Our Team"
-        subheading="Our team is composed of current PhDs, Masters, and Undergraduate students, alongside academic leaders ranging from AI to Biology."
+        subheading="Our team is composed of current PhDs, Masters, and Undergraduate students, alongside experts in AI and Biology."
       />
       <Grid
         gap={20}
