@@ -74,13 +74,13 @@ const TEAM_HEADSHOTS: headShotsInterface[] = [
     name: "Frankie Hodges",
     role: "Co-Founder",
     src: frankie,
-    linkedin: "https://www.linkedin.com/in/guy-cohen-96a6141ab/",
+    linkedin: "https://www.linkedin.com/in/hodgesfm/",
   },
   {
     name: "Sundareswar Pullela",
     role: "Co-Founder",
     src: sundar,
-    linkedin: "https://www.linkedin.com/in/hodgesfm/",
+    linkedin: "https://www.linkedin.com/in/psundareswar/",
   },
   {
     name: "Guy Cohen",
