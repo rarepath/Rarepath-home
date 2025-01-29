@@ -13,7 +13,7 @@ const SectionHeading = ({
         {heading}
       </Heading>
       {subheading && (
-        <Text color={"gray.600"} fontSize={{ base: "sm", sm: "lg" }}>
+        <Text color={"gray.600"} fontSize={{ base: "md", sm: "lg" }}>
           {subheading}
         </Text>
       )}

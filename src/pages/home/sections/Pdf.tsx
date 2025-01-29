@@ -11,12 +11,12 @@ const Pdf = () => {
     >
       <SectionHeading
         heading="Whitepaper"
-        subheading="Explore our whitepaper about the application of AI in rare disease diagnosis."
+        subheading="Explore our white paper about the application of AI in rare disease diagnosis."
       />
       <Box
         as="iframe"
         boxShadow="md"
-        src="/Radiant-White-Paper.pdf"
+        src="https://drive.google.com/file/d/1qucE-hCcgb7hn9PVBLRV8KSYvR4vL1Y1/preview"
         w="100%"
         h="750px"
         borderRadius="md"

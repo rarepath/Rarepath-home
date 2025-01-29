@@ -23,31 +23,27 @@ export default function CallToActionWithAnnotation() {
       >
         <Heading
           fontWeight={600}
-          fontSize={{ base: "2xl", sm: "4xl", lg: "6xl" }}
+          w={{ base: "unset", xl: "120%" }}
+          fontSize={{ base: "3xl", sm: "4xl", lg: "6xl" }}
           lineHeight={"110%"}
         >
-          Modernize your Diagnosis Process <br />
+          RarePath: harnessing the power of AI for <br />
           <Text as={"span"} color={"primary.400"}>
-            With RarePath
+            rare disease
           </Text>
         </Heading>
         <Text
           color={"gray.500"}
-          fontSize="xl"
+          fontSize={{ base: "xl", sm: "xl" }}
           w={{ base: "75%", lg: "unset" }}
           textAlign="center"
         >
-          RarePath is a subsidiary of{" "}
-          <Text
-            as="a"
-            href="https://lab.saramsey.org/"
-            target="_blank"
-            color="primary.500"
-          >
-            Ramsey Labs
+          The Rare Path initiative seeks to improve diagnosis and management of{" "}
+          <Text as="span" color="primary.500">
+            rare diseases
           </Text>{" "}
-          at Oregon State University that seeks to explore the application of AI
-          in disease diagnosis through various products.
+          through artificial intelligence-powered software tools, such as their
+          signature tool Radiant, developed with input from biomedical experts.
         </Text>
         <Stack
           direction={"column"}
@@ -61,19 +57,28 @@ export default function CallToActionWithAnnotation() {
             gap={{ base: "10px", lg: "unset" }}
             alignItems="center"
           >
-            <Button px={6} color="white" w="200px" boxShadow="glow-md">
+            <Button
+              as="a"
+              href="https://radiant.rarepath.ai/"
+              px={6}
+              color="white"
+              w="200px"
+              boxShadow="glow-md"
+            >
               Try now
             </Button>
             <Button
+              as="a"
+              href="#whitepaper"
               variant={"outline"}
               colorScheme={"orange"}
               w="200px"
               bg="white"
             >
-              Read our whitepaper
+              Read our white paper
             </Button>
           </ButtonGroup>
-          <Box>
+          <Box display={{ base: "none", sm: "unset" }}>
             <Icon
               as={Arrow}
               color={useColorModeValue("gray.800", "gray.300")}

@@ -75,7 +75,7 @@ export default function Features() {
         <Heading fontSize={{ base: "2xl", sm: "4xl" }} fontWeight={"bold"}>
           Cutting-edge technology powering Radiant
         </Heading>
-        <Text color={"gray.600"} fontSize={{ base: "sm", sm: "lg" }}>
+        <Text color={"gray.600"} fontSize={{ base: "md", sm: "lg" }}>
           Discover the advanced AI technologies that make Radiant a game-changer
           in rare disease diagnosis.
         </Text>
