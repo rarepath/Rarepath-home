@@ -9,6 +9,8 @@ import {
   Grid,
   GridItem,
   Flex,
+  VStack,
+  Link,
 } from "@chakra-ui/react";
 import { ReactNode } from "react";
 import { BiMailSend } from "react-icons/bi";
@@ -127,25 +129,30 @@ export default function Footer() {
             </Stack> */}
             <Stack align={{ base: "center", md: "flex-start" }}>
               <ListHeader>Stay up to date</ListHeader>
-              <Stack direction={"row"}>
-                <Input
-                  placeholder={"Your email address"}
-                  bg={useColorModeValue("blackAlpha.100", "whiteAlpha.100")}
-                  border={0}
-                  _focus={{
-                    bg: "whiteAlpha.300",
-                  }}
-                />
-                <IconButton
-                  bg={useColorModeValue("primary.400", "primary.800")}
-                  color={useColorModeValue("white", "gray.800")}
-                  _hover={{
-                    bg: "primary.500",
-                  }}
-                  aria-label="Subscribe"
-                  icon={<BiMailSend />}
-                />
-              </Stack>
+              <VStack align="stretch">
+                <Stack direction={"row"}>
+                  <Input
+                    placeholder={"Your email address"}
+                    bg={useColorModeValue("blackAlpha.100", "whiteAlpha.100")}
+                    border={0}
+                    _focus={{
+                      bg: "whiteAlpha.300",
+                    }}
+                  />
+                  <IconButton
+                    bg={useColorModeValue("primary.400", "primary.800")}
+                    color={useColorModeValue("white", "gray.800")}
+                    _hover={{
+                      bg: "primary.500",
+                    }}
+                    aria-label="Email"
+                    icon={<BiMailSend />}
+                  />
+                </Stack>
+                <Link as="a" href="mailto:contact-us@rarepath.ai">
+                  contact-us@rarepath.ai
+                </Link>
+              </VStack>
             </Stack>
           </Flex>
         </Container>

@@ -1,8 +1,8 @@
 import {
-  dom,
+  // dom,
   fern,
   frankie,
-  guy,
+  // guy,
   ramsey,
   roach,
   sundar,
@@ -21,6 +21,7 @@ const Team = () => {
             name={member.name}
             role={member.role}
             linkedin={member.linkedin}
+            from={member?.from}
           />
         </GridItem>
       );
@@ -31,7 +32,7 @@ const Team = () => {
     <VStack gap={20} id="team">
       <SectionHeading
         heading="Our Team"
-        subheading="Our team is composed of current PhDs, Masters, and Undergraduate students, alongside experts in AI and Biology."
+        subheading="Rare Path is a multidisciplinary team that includes experts in AI, machine-learning, bioinformatics, data science, software engineering, and rare disease genetics."
       />
       <Grid
         gap={20}
@@ -67,6 +68,7 @@ interface headShotsInterface {
   role: string;
   src: string;
   linkedin: string;
+  from?: string;
 }
 
 const TEAM_HEADSHOTS: headShotsInterface[] = [
@@ -82,35 +84,36 @@ const TEAM_HEADSHOTS: headShotsInterface[] = [
     src: sundar,
     linkedin: "https://www.linkedin.com/in/psundareswar/",
   },
-  {
-    name: "Guy Cohen",
-    role: "Head of Product",
-    src: guy,
-    linkedin: "https://www.linkedin.com/in/guy-cohen-96a6141ab/",
-  },
-  {
-    name: "Dominick Tucker",
-    role: "Product Engineer",
-    src: dom,
-    linkedin: "https://www.linkedin.com/in/dominicktucker/",
-  },
+  // {
+  //   name: "Guy Cohen",
+  //   role: "Head of Product",
+  //   src: guy,
+  //   linkedin: "https://www.linkedin.com/in/guy-cohen-96a6141ab/",
+  // },
+  // {
+  //   name: "Dominick Tucker",
+  //   role: "Product Engineer",
+  //   src: dom,
+  //   linkedin: "https://www.linkedin.com/in/dominicktucker/",
+  // },
 ];
 
 const ADVISOR_HEADSHOTS: headShotsInterface[] = [
   {
-    name: "Dr. Ramsey",
+    name: "Stephen Ramsey, PhD",
     role: "Lead advisor",
     src: ramsey,
     linkedin: "https://www.linkedin.com/in/sramsey/",
   },
   {
-    name: "Dr. Roach",
+    name: "Jared Roach, MD PhD",
     role: "Medical advisor",
     src: roach,
+    from: "Institute for Systems Biology",
     linkedin: "https://www.linkedin.com/in/jaredroach/",
   },
   {
-    name: "Dr. Fern",
+    name: "Xiaoli Fern, PhD",
     role: "ML advisor",
     src: fern,
     linkedin: "https://www.linkedin.com/in/xiaoli-fern-712b455/",

@@ -9,7 +9,7 @@ const AboutUs = () => {
         src={previewOne}
         heading="Introducing: Radiant"
         subheading="AI for Rare Disease Care"
-        body="Radiant, part of the RarePath initiative by Ramsey Labs at Oregon State University, uses AI to improve rare disease diagnosis and treatment. It supports patients, caregivers, and healthcare professionals with AI-driven insights."
+        body="Radiant, part of the RarePath initiative by Ramsey Labs at Oregon State University, uses AI to improve rare disease diagnosis and treatment. It currently supports EDS and HPP and seeks to provide patients, caregivers, and healthcare professionals with AI-driven insights."
         imgFirst
       />
       <ProductPreview

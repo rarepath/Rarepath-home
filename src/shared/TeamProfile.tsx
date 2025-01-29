@@ -15,11 +15,13 @@ export default function TeamProfile({
   name,
   role,
   linkedin,
+  from,
 }: {
   src: string;
   name: string;
   role: string;
   linkedin: string;
+  from?: string;
 }) {
   return (
     <VStack minW="300px">
@@ -36,9 +38,9 @@ export default function TeamProfile({
           <Heading fontSize={"2xl"} fontWeight={500} fontFamily={"body"}>
             {name}
           </Heading>
+          {from && <Text color={"gray.500"}>{from}</Text>}
           <Text color={"gray.500"}>{role}</Text>
         </Stack>
-
         <Button
           w="150px"
           as="a"

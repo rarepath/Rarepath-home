@@ -22,7 +22,7 @@ export const NAV_ITEMS: Array<NavItem> = [
     href: "#contact",
   },
   {
-    label: "Whitepaper",
+    label: "White paper",
     href: "#whitepaper",
   },
 ];
