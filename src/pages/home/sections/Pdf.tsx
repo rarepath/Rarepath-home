@@ -10,7 +10,7 @@ const Pdf = () => {
       id="whitepaper"
     >
       <SectionHeading
-        heading="Whitepaper"
+        heading="White Paper"
         subheading="Explore our white paper about the application of AI in rare disease diagnosis."
       />
       <Box
