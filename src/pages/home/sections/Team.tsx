@@ -103,6 +103,7 @@ const ADVISOR_HEADSHOTS: headShotsInterface[] = [
     name: "Stephen Ramsey, PhD",
     role: "Lead advisor",
     src: ramsey,
+    from: "Oregon State University",
     linkedin: "https://www.linkedin.com/in/sramsey/",
   },
   {
@@ -114,7 +115,8 @@ const ADVISOR_HEADSHOTS: headShotsInterface[] = [
   },
   {
     name: "Xiaoli Fern, PhD",
-    role: "ML advisor",
+    role: "Machine Learning Advisor",
+    from: "Oregon State University",
     src: fern,
     linkedin: "https://www.linkedin.com/in/xiaoli-fern-712b455/",
   },

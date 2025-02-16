@@ -7,7 +7,7 @@ import dom from "@/assets/home/headshots/dom.jpeg";
 import fern from "@/assets/home/headshots/fern.jpeg";
 import roach from "@/assets/home/headshots/roach.jpeg";
 import ramsey from "@/assets/home/headshots/sramsey_studio.jpg";
-import sundar from "@/assets/home/headshots/sundar.jpeg";
+import sundar from "@/assets/home/headshots/sundar.png";
 import frankie from "@/assets/home/headshots/frankie.jpeg";
 import previewOne from "@/assets/home/preview_1.png";
 import previewTwo from "@/assets/home/preview_2.png";
