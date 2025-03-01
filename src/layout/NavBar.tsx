@@ -42,7 +42,7 @@ export default function NavBar() {
             cursor="pointer"
             flex={{ base: "unset", lg: 0.25 }}
           >
-            <Logo size="xl" boxSize={8} gap={4} text="RarePath" />
+            <Logo size="xl" boxSize={8} gap={4} text="Radiant" />
           </Box>
           <Flex
             display={{ base: "none", lg: "flex" }}
@@ -77,7 +77,7 @@ export default function NavBar() {
         >
           <Button
             as="a"
-            href="https://radiant.rarepath.ai/"
+            href="https://radiant.rtx.ai/"
             display={{ base: "none", lg: "inline-flex" }}
             fontSize={"sm"}
             color={"white"}

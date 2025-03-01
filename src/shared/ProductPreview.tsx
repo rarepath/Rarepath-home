@@ -66,7 +66,7 @@ const ProductPreview = ({
           rightIcon={<Icon as={FaArrowRight} />}
           boxShadow="glow-md"
           as="a"
-          href="https://radiant.rarepath.ai/"
+          href="https://radiant.rtx.ai/"
         >
           Try out Radiant
         </Button>

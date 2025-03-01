@@ -32,7 +32,7 @@ const Team = () => {
     <VStack gap={20} id="team">
       <SectionHeading
         heading="Our Team"
-        subheading="Rare Path is a multidisciplinary team that includes experts in AI, machine-learning, bioinformatics, data science, software engineering, and rare disease genetics."
+        subheading="Radiant is a multidisciplinary team that includes experts in AI, machine-learning, bioinformatics, data science, software engineering, and rare disease genetics."
       />
       <Grid
         gap={20}

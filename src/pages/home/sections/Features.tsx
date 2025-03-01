@@ -58,7 +58,7 @@ const Card = ({ heading, description, icon }: CardProps) => {
           colorScheme={"orange"}
           size={"sm"}
           as="a"
-          href="https://radiant.RarePath.ai/"
+          href="https://radiant.rtx.ai/"
           target="_blank"
         >
           Try Now

@@ -27,7 +27,7 @@ export default function CallToActionWithAnnotation() {
           fontSize={{ base: "3xl", sm: "4xl", lg: "6xl" }}
           lineHeight={"110%"}
         >
-          RarePath: harnessing the power of AI for <br />
+          Radiant: harnessing the power of AI for <br />
           <Text as={"span"} color={"primary.400"}>
             rare disease
           </Text>
@@ -38,7 +38,7 @@ export default function CallToActionWithAnnotation() {
           w={{ base: "75%", lg: "unset" }}
           textAlign="center"
         >
-          The Rare Path initiative seeks to improve diagnosis and management of{" "}
+          The Radiant initiative seeks to improve diagnosis and management of{" "}
           <Text as="span" color="primary.500">
             rare diseases
           </Text>{" "}
@@ -59,7 +59,7 @@ export default function CallToActionWithAnnotation() {
           >
             <Button
               as="a"
-              href="https://radiant.rarepath.ai/"
+              href="https://radiant.rtx.ai/"
               px={6}
               color="white"
               w="200px"

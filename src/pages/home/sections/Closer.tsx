@@ -18,7 +18,7 @@ const Closer = () => {
         <Heading color="white">Join the Fight Against Rare Disease</Heading>
         <Text color="white">
           Millions of rare disease patients suffer misdiagnoses and delayed
-          diagnoses. Through tools like Radiant, the RarePath effort aims to
+          diagnoses. Through tools like Radiant, we guide want to
           change that. By collaborating with healthcare providers, researchers,
           and advocates, we aim to reduce diagnostic times and increase access
           to treatment. Your involvement could help reshape the future of rare

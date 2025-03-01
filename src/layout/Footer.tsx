@@ -76,9 +76,9 @@ export default function Footer() {
           >
             <Stack spacing={2} align="center">
               <Box>
-                <Logo size="xl" boxSize={8} text="RarePath" />
+                <Logo size="xl" boxSize={8} text="Radiant" />
               </Box>
-              <Text fontSize={"sm"}>© 2024 RarePath. All rights reserved</Text>
+              <Text fontSize={"sm"}>© 2024 Radiant. All rights reserved</Text>
               {/* <Stack direction={"row"} spacing={6}>
                 <SocialButton label={"Twitter"} href={"#"}>
                   <FaTwitter />
@@ -149,9 +149,9 @@ export default function Footer() {
                     icon={<BiMailSend />}
                   />
                 </Stack>
-                <Link as="a" href="mailto:contact-us@rarepath.ai">
+                {/* <Link as="a" href="mailto:contact-us@rarepath.ai">
                   contact-us@rarepath.ai
-                </Link>
+                </Link> */}
               </VStack>
             </Stack>
           </Flex>
